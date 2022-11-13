@@ -1,0 +1,14 @@
+/* function game() {
+    playRound();
+
+    if(playRound() === "Player") {
+        playerPoints ++;
+        return "Player points: " + playerPoints;
+    } else  if(playRound() === "Computer") {
+        computerPoints++;
+        return "Computer points: " + computerPoints;
+    } else {
+        return "It's a TIE. No points."
+    }
+    
+}

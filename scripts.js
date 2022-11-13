@@ -1,8 +1,8 @@
-let num = Math.random();
-
 //computer picks randomly between rock, paper, scissors
 function computerPlay() {
     
+    let num = Math.random();
+
     if(num < 0.333) {
 
         return "rock";
@@ -19,7 +19,7 @@ function computerPlay() {
 
 }
 
-// adds points and determines round result
+// adds points and determines round
 function playRound(playerSelection, computerSelection) {
 
     if(playerSelection.toLowerCase() === computerSelection) {
@@ -59,7 +59,7 @@ function game() {
     for (let i = 0; i < 5; i++) {
     
         let playerSelection = prompt("Rock, paper or scissors?");
-        let computerSelection = computerPlay();
+        const computerSelection = computerPlay();
 
         console.log("Computer picks " + computerPlay())
         console.log("Player picks " + playerSelection)
